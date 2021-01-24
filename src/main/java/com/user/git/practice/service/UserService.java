@@ -10,5 +10,8 @@ import java.util.List;
 public class UserService {
 
     private List<User> userList = new ArrayList();
-    
+
+    public List<User> getUserList(){
+        return userList;
+    }
 }
