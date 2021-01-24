@@ -10,12 +10,15 @@ import java.util.List;
 public class UserService {
 
     private List<User> userList = new ArrayList();
+    private int id = 0 ;
 
     public List<User> getUserList(){
         return userList;
     }
 
-    public void saveMethod(){
-        
+    public void saveMethod(User user){
+        id ++;
+        user.setId(id);
+        userList.add(user);
     }
 }
