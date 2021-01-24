@@ -18,5 +18,6 @@ public class UserController {
     public List<User> getUserList(){
         System.out.println("Getting all Users");
         return userService.getUserList();
+        
     }
 }
